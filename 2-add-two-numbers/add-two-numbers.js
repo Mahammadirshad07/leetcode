@@ -11,7 +11,7 @@
  * @return {ListNode}
  */
 var addTwoNumbers = function(l1, l2) {
-      let dummy = new ListNode(0); // start with dummy node
+     let dummy = new ListNode(0); 
   let current = dummy;
   let carry = 0;
 
@@ -28,9 +28,10 @@ var addTwoNumbers = function(l1, l2) {
       l2 = l2.next;
     }
 
-    carry = Math.floor(sum / 10); // get carry
-    current.next = new ListNode(sum % 10); // create new node with remainder
+    carry = Math.floor(sum / 10); 
+    current.next = new ListNode(sum % 10); 
     current = current.next;
   }
- return dummy.next; 
+
+  return dummy.next;
 };
